@@ -6,10 +6,10 @@ highlighter:      pygments
 permalink:        pretty
 
 # Setup
-title:            portfolio-site
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column'
-url:              http://vikumar.github.io
+title:            Data Science Portfolio
+tagline:          'My Portfolio'
+description:      'Details of my Data Science projects'
+url:              http://vigneshk01.github.io
 baseurl:          /
 
 author:
@@ -22,4 +22,4 @@ paginate:         5
 version:          2.1.0
 
 github:
-  repo:           https://github.com/vigneshk01/vikumar.github.io
+  repo:           https://github.com/vigneshk01/vigneshk01.github.io
