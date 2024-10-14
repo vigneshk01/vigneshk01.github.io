@@ -11,6 +11,7 @@ tagline:          'My Portfolio'
 description:      'Details of my Data Science projects'
 url:              http://vigneshk01.github.io
 baseurl:          /
+plugins:          [jekyll-paginate]
 
 author:
   name:           ''
