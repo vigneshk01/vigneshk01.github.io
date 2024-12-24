@@ -6,6 +6,32 @@ layout: default
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-date">{{ page.date | date_to_string }}</span>
   {{ content }}
+
+  {% assign url_parts = page.url | split: '/' %}
+  {% assign last_part = url_parts | last %}
+  {% assign name_parts = last_part | split: '-' %}
+  {% assign first_two_parts = name_parts | slice: 0, 2 %}
+  {% assign final_string1 = first_two_parts | join: '-' | append: ".html" %}
+  {% assign final_string2 = first_two_parts | join: '-' | append: ".pdf" %}
+
+  <div class = "scrollable-container" >
+  {% if final_string1 contains '-' %}
+    {% include  {{ final_string1 }} %}
+  {% else %}
+    <iframe src="../_includes/RSVP-Movies.pdf" width="1000%" height="600px"></iframe>
+  {% endif %}
+
+  </div>
+  
+  <style>
+    .scrollable-container {
+      max-width: 1200%; /* Set the maximum width as needed */
+      white-space: nowrap;
+      overflow-x: auto; /* Hide horizontal scrollbar */
+      overflow-y: auto; /* Enable vertical scrolling */
+      height: 500px; /* Set a fixed height to make scrolling visible */
+    }
+  </style>
 </div>
 
 <div class="related">

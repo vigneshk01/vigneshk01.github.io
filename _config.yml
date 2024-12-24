@@ -24,3 +24,5 @@ version:          2.1.0
 
 github:
   repo:           https://github.com/vigneshk01/vigneshk01.github.io
+
+include_page:     "./_includes/credit-eda-code"
